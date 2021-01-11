@@ -1,0 +1,202 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.login-row {
+  // margin-left: 5%;
+  display: flex;
+  justify-content: center;
+}
+.login-form{
+  // width:459px;
+  // display: flex;
+  // margin: 0 auto;
+  // margin-top: 50px;
+    margin-right: -30px;
+}
+.login-card{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius:0px;
+  box-shadow:0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding:20px;
+  height: 100vh;
+}
+.center {
+  text-align: center;
+}
+.or-section {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  width: 22.5rem;
+  color:#8B8B8B;
+}
+.or-section:before, .or-section:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #8B8B8B;;
+  margin: auto;
+}
+.or-section:before {
+  margin-right: 10px;
+} 
+.or-section:after {
+  margin-left: 10px;
+}
+.or-section p {
+  font-size: 10px;
+  position: relative;
+  top: 7px;
+}
+
+.welcome {
+  font: normal normal bold 30px/60px Poppins;
+  letter-spacing: 0px;
+  color: #003366;
+}
+.back {
+  top: 0px;
+  left: 306px;
+  width: 154px;
+  text-align: left;
+  font: normal normal bold 30px/60px Poppins;
+  letter-spacing: 0px;
+  color: #FF8E6E;
+}
+.please-login-text {
+  text-align: left;
+  font: normal normal normal 12px/20px Poppins;
+  letter-spacing: 0px;
+  color: #818181;
+  opacity: 1;
+}
+
+.login-with-text {
+  text-align: left;
+  font: normal normal normal 12px/35px Poppins;
+  letter-spacing: 0px;
+  color: #8B8B8B;
+  opacity: 1;
+}
+
+.google-btn, .google-btn:focus, .google-btn:active, .facebook-btn, .facebook-btn:active, .facebook-btn:focus {
+  background: #F4F8F7 0% 0% no-repeat padding-box !important;
+  box-shadow: 0px 0px 6px #00000017 !important;
+  border-radius: 10px !important;
+  opacity: 1 !important;
+  color: #8B8B8B !important;
+  padding: 0.5rem 1rem !important;
+  border:0 !important;
+  letter-spacing:0 !important;
+  font: normal normal normal 14px Poppins !important;
+  padding-right: 55px !important;
+  padding-left: 30px !important;
+}
+
+// .google-btn:hover, .facebook-btn:hover {
+//   background-color: #D85F5F !important;
+//   background: url("../../assets/img/google.png") no-repeat
+// }
+
+// div img:last-child {
+//   display: none;  
+// }
+// div:hover img:last-child {
+//   display: block;  
+// }
+// div:hover img:first-child {
+//   display: none;  
+// }
+
+.user-input , .password-input {
+  width: 22.5rem;
+  outline:0;
+}
+
+.login-btn, .login-btn:hover, .login-btn:focus, .login-btn:active{
+  background: #003366 0% 0% no-repeat padding-box !important;
+  border-radius: 10px;
+  opacity: 1;
+  width: 23rem;
+  height:44px;
+  border-color: #003366;
+}
+
+.general-input,.general-input:hover,.general-input:focus,.general-input:active{
+  background-color: #e9ecef;
+  border-top: 1px solid #ced4da;
+  border-right: 1px solid #ced4da;
+  border-bottom: 1px solid #ced4da;
+  height:44px;
+  outline:0;
+  box-shadow: none;
+}
+.remember-me, .forgot-password{
+  font-size: 11px;
+}
+.remember-section{
+  float: left;
+  width: 50%;
+  position: relative;
+  left: 20px;
+}
+.forgot-password {
+  float: right;
+  width: 50%;
+  position: relative;
+  left: 65px;
+}
+.forgot-password > span {
+  cursor: pointer;
+}
+.underline{
+  text-decoration:underline;
+}
+.signup-section {
+  font-size: 13px;
+}
+.login-input-divison{
+  margin-left:-10px;
+}
+.group-img {
+  height: 100vh;
+  width: 100vw;
+}
+.geppetto-image-division{
+    position: absolute;
+    top: 30px;
+    // left: 220px;
+    // z-index: 1;
+    justify-content: center;
+    display: flex;
+}
+.general-input-border, .general-input-border:hover {
+  border-right: 1px solid #e9ecef;}
+
+@media screen and (min-width: 320px) and (max-width:1024px) {
+  .sample-form {
+    display: none;
+  }
+  .login-form{
+    width:459px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+// @media screen and (min-width: 320px) and (max-width:424px) {
+//   .login-row{
+//   margin-left: 2%;
+//   }
+// }
+
+// @media screen and (min-width: 1400px) and (max-width:2440px) {
+//   .login-form{
+//    margin-right: -15px;
+//   }
+//   .group-img {
+//     height: 121.2vh;
+//   }
+// }

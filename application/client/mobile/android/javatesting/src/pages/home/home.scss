@@ -1,0 +1,46 @@
+.myCard {
+  position: relative;
+}
+
+.myOverlay {
+  width: 100%;
+  height: 58%;
+  text-align: center;
+  position: absolute;
+  z-index: 99;
+  bottom: 0px;
+  opacity: 0.5;
+}
+
+.card-md h1 {
+  margin: 0 0 2px;
+  font-size: 2.4rem;
+  font-weight: 600 !important;
+  color: #fff !important;
+}
+
+.spanish {
+  color: #f8f8f8;
+  font-size: 12px;
+}
+
+.spanish1 {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.endCard{
+  color: rgba(239, 255, 244, 1);
+}
+
+// .myOverlay {
+
+//   position: absolute;
+//   left: 0;
+//   top: 50%;
+//   width: 100%;
+//   text-align: center;
+//   font-size: 18px;
+//   color: #f8f8f9;
+//   font-weight: bold;
+// }

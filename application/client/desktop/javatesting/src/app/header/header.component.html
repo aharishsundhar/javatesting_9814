@@ -1,0 +1,53 @@
+<div class="wrapper">
+  <nav id="sidebar" class="active">
+      <div class="sidebar-header">
+          <div class="marginClass">
+            <h4>ENJOY THE TRAVEL</h4>
+          </div>
+          <div class="marginClass">
+            <a class="close" id="closeIcon"></a>
+          </div>
+      </div>
+      <ul class="list-unstyled components">
+   <li>
+                                                    <a class="text" [routerLink]="['/முகப்பு']">{{'source.முகப்பு' | i18next}}</a>
+                                                </li>
+ <li>
+                                                    <a class="text" [routerLink]="['/நிர்வாகி']">{{'source.நிர்வாகி' | i18next}}</a>
+                                                </li>
+ <li>
+                                                    <a class="text" [routerLink]="['/வெளியேறு']">{{'source.வெளியேறு' | i18next}}</a>
+                                                </li>
+ <li>
+                                                    <a class="text" [routerLink]="['/உள் நுழை']">{{'source.உள் நுழை' | i18next}}</a>
+                                                </li><li>
+                <a href="#translator" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle text">
+            {{'source.selectLanguage' | i18next }}</a>
+                <ul class="collapse list-unstyled" id="translator">
+                  <li>
+                    <a class="text" *ngFor="let lang of languages" (click)='confirmLangModel(lang)'>{{
+                        'languages.' + lang |
+                        i18nextCap }}</a>
+                  </li>
+                </ul>
+              </li>
+      </ul>
+  </nav>
+  <div id="content" class="active">
+      <a id="nav-toggle"><span></span></a>
+  </div>
+</div>
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'top': '100px','display': confirmLangChangeModal}">
+  <div class="modal-dialog modal-sm" role="dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <p>language change cause you to re-login</p>
+      </div>
+      <div class="modal-footer" style="padding: 5px">
+        <button type="button" (click)="confirmLangChange()" class="btn btn-default">Confirm</button>
+        <button type="button" (click)="onCloseHandled()" class="btn btn-default">Cancel</button>
+      </div>
+    </div>
+
+  </div>
+</div>
